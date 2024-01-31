@@ -76,8 +76,7 @@ const Container = styled.div`
       height: 2rem;
     }
     h3 {
-      color: white;
-      text-transform: uppercase;
+      color: white;  
     }
   }
   .contacts {
@@ -146,4 +145,49 @@ const Container = styled.div`
       }
     }
   }
+  @media screen and (min-width:480px) and (max-width:720px) {
+    .brand {
+      img {
+        height: 3rem;
+      }
+      h3 {
+        display: none;  
+      }
+    }
+    .contacts {
+      
+      .contact {
+        min-height: 5.5rem;
+        flex-direction: column;
+        gap: 0;
+        .avatar {
+        img {
+          height: 3rem;
+          max-inline-size: 100%;
+        }
+      }
+      .username {
+          h3 {
+            font-size: 0.7rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .current-user {
+      flex-direction: column;
+      gap: 0;
+      .avatar {
+      img {
+        height: 3rem;
+        max-inline-size: 100%;
+      }
+    }
+    .username {
+        h2 {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    }
 `;

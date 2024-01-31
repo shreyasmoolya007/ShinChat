@@ -29,7 +29,7 @@ export default function ChatInput({handleSendMsg}) {
       <div className="button-container">
         <div className="emoji">
             <BsEmojiSmileFill onClick={handleEmojiPickerhideShow}/>
-            {showEmojiPicker && <Picker onEmojiClick={handleEmojiClick}/>}
+            {showEmojiPicker && <Picker width="200" onEmojiClick={handleEmojiClick}/>}
         </div>
       </div>
       <form className="input-container" onSubmit={(e) => sendChat(e)}>
@@ -123,6 +123,20 @@ const Container = styled.div`
             svg {
                 font-size: 1.5rem;
                 color: white;
+            }
+        }
+    }
+    @media screen and (min-width:480px) and (max-width:720px) {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .button-container {
+            margin-right: 10px;
+        }
+        .input-container {
+            button {
+                padding: 0.15rem 1rem;
             }
         }
     }

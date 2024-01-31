@@ -114,7 +114,6 @@ const FormContainer = styled.div`
         }
         h1 {
             color: white;
-            text-transform: uppercase;
         }
     }
     form {
@@ -155,7 +154,6 @@ const FormContainer = styled.div`
     }
     span {
         color: white;
-        text-transform: uppercase;
         a {
             color: #4e0eff;
             text-decoration: none;

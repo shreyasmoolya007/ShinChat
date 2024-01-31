@@ -158,5 +158,30 @@ const Container =styled.div`
             background-color: #4eeff;
         }
     }
+    @media screen and (min-width:480px) and (max-width:720px) {
+        .avatars {
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 2rem;
 
+            .avatar {
+                border: 0.4rem solid transparent;
+                padding: 0.4rem;
+                border-radius: 5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s ease-in-out;
+
+                img {
+                height: 6rem;
+                }
+            }
+
+            .selected {
+                border: 0.4rem solid #4e0eff;
+            }
+        }
+    }
 `;
